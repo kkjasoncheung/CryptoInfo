@@ -1,0 +1,28 @@
+#header {
+	text-align: center;
+}
+
+/* Styles for navigation bar */
+
+#nav-container {
+	text-align: center;
+	border: 1px solid red;
+	padding: 20px;
+}
+
+.nav-item {
+	padding: 10px;
+	border-radius: 3px;
+}
+
+#btc-nav {
+
+}
+
+#eth-nav {
+
+}
+
+#ltc-nav {
+
+}
