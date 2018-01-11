@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BitcoinDataService } from './../bitcoin-data.service';
 
 @Component({
   selector: 'app-bitcoin',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BitcoinComponent implements OnInit {
 
-  constructor() { }
+  constructor(private btcData:BitcoinDataService) { }
 
   ngOnInit() {
+  	this.btcData.retrieveData();
   }
 
 }

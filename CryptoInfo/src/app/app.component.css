@@ -6,23 +6,29 @@
 
 #nav-container {
 	text-align: center;
-	border: 1px solid red;
 	padding: 20px;
 }
 
 .nav-item {
-	padding: 10px;
+	padding: 20px;
 	border-radius: 3px;
+	color: white;
+	text-decoration: none;
+}
+
+.nav-item:hover {
+	text-decoration: none;
+	opacity: 0.9;
 }
 
 #btc-nav {
-
+	background-color: #f7931a;
 }
 
 #eth-nav {
-
+	background-color: #6f7cba;
 }
 
 #ltc-nav {
-
+	background-color: #b5b5b5;
 }

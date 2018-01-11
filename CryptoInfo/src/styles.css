@@ -2,3 +2,31 @@
 body {
 	font-family: sans-serif;
 }
+
+/* Styles for content-container */
+
+/* Styles for first-row */
+.price-col, .trend-col {
+	padding: 20px;
+}
+
+/* Styles for Cards */
+.card-title {
+	color: gray	!important;
+}
+
+
+.price-card {
+	text-align: left;
+}
+
+/* Styles for icons */
+.local_atm {
+	font-size: 48px;
+	color: white;
+	border-radius: 3px;
+	padding: 20px;
+	background: linear-gradient(to right, #fea525, #fb8c01);
+}
+
+
