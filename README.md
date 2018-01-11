@@ -1,5 +1,7 @@
 # CryptoInfo
 
+This project is a SPA created with AngularJS. The purpose of this application is to show prices, charts and related information to cryptocurrencies like Bitcoin, Ethereum and Litecoin.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
 ## Development server
