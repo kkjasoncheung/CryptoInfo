@@ -10,7 +10,10 @@ export class BitcoinComponent implements OnInit {
 
   constructor(private btcData:BitcoinDataService) { }
 
+  btcPrices = {};
+
   ngOnInit() {
+  	// get trading pair prices
   	this.btcData.retrieveData();
   }
 

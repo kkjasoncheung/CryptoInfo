@@ -4,16 +4,18 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class BitcoinDataService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) { this.retrieveData(); }
 
-  // url to fetch crypto data from API
-  URL:string = '';
+  // API url to fetch btc data
+  tradingPairs = {} ;
 
   // method to retrieve data via http GET
   retrieveData() {
   	// test http client
-  	this.http.get('https://pokeapi.co/api/v2/pokemon/1/').subscribe(
-  		data => console.log(data);
+  	this.http.get('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=LTC,USD,ETH,BCH').subscribe(
+  		(data) => {
+        this.tradingPairs = data;
+      }
   	);
   }
 }

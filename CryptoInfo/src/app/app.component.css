@@ -32,3 +32,8 @@
 #ltc-nav {
 	background-color: #b5b5b5;
 }
+
+/* Styles for container-fluid */
+.container-fluid {
+	padding: 0 30px;
+}

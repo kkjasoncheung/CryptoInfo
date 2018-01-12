@@ -1,12 +1,13 @@
+<!-- First row: prices and trend line -->
 <div class="first-row row">
 	<div class="col-md-3 col-sm-12 price-col">
 		<div class="price-card card">
 			<div class="card-body">
 				<h1 class="card-title">Price</h1>
-				<p class="card-text">BTC/USD: $1000.00 USD</p>
-				<p class="card-text">BTC/ETH: 0.08697256 BTC</p>
-				<p class="card-text">BTC/LTC: 0.0170700 BTC</p>
-				<p class="card-text">BTC/BCH: 0.1321000 BTC</p>
+				<p class="card-text">BTC/USD: {{ this.btcData.tradingPairs.USD | currency }} USD</p>
+				<p class="card-text">BTC/ETH: {{ this.btcData.tradingPairs.ETH }} ETH</p>
+				<p class="card-text">BTC/LTC: {{ this.btcData.tradingPairs.LTC }} LTC</p>
+				<p class="card-text">BTC/BCH: {{ this.btcData.tradingPairs.BCH }} BCH</p>
 			</div>
 			<i class="material-icons local_atm">local_atm</i>
 		</div>
@@ -19,3 +20,5 @@
 		</div>
 	</div>
 </div>
+
+<!-- Second row: social media + news -->
