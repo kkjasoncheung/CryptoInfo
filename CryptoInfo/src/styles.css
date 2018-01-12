@@ -21,12 +21,13 @@ body {
 }
 
 /* Styles for icons */
-.local_atm {
+.material-icons {
 	font-size: 48px;
 	color: white;
 	border-radius: 3px;
 	padding: 20px;
-	background: linear-gradient(to right, #fea525, #fb8c01);
 }
 
-
+.trending_up {
+	background: linear-gradient(to right, #84e184, #32cd32);
+}

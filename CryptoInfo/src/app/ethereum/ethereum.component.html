@@ -1,3 +1,25 @@
-<p>
-  ethereum works!
-</p>
+<!-- First row: prices and trend line -->
+<div class="first-row row">
+	<div class="col-md-3 col-sm-12 price-col">
+		<div class="price-card card">
+			<div class="card-body">
+				<h1 class="card-title">Price</h1>
+				<p class="card-text">ETH/USD: {{ this.btcData.tradingPairs.USD | currency }} USD</p>
+				<p class="card-text">ETH/BTC: {{ this.btcData.tradingPairs.ETH }} ETH</p>
+				<p class="card-text">ETH/LTC: {{ this.btcData.tradingPairs.LTC }} LTC</p>
+				<p class="card-text">ETH/BCH: {{ this.btcData.tradingPairs.BCH }} BCH</p>
+			</div>
+			<i class="material-icons local_atm">local_atm</i>
+		</div>
+	</div>
+	<div class="col-md-9 col-sm-12 trend-col">
+		<div class="trend-card card">
+			<div class="card-body">
+				<h1 class="card-title">Trend</h1>
+			</div>
+			<i class="material-icons trending_up">trending_up</i>
+		</div>
+	</div>
+</div>
+
+<!-- Second row: social media + news -->
