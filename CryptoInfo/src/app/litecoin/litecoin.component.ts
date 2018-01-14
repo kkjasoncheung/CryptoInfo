@@ -48,7 +48,7 @@ export class LitecoinComponent implements OnInit {
 	        },
 	        elements: {
 	        	point: {
-	        		radius: 0
+	        		radius: 1.5
 	        	}
 	        },
 	        legend: {
@@ -58,7 +58,7 @@ export class LitecoinComponent implements OnInit {
 	  });
 
 	  // fix graph not showing upon loading
-	  setTimeout(function() { myTrendline.update(); },10);
+	  setTimeout(function() { myTrendline.update(); },100);
   }
 
 }

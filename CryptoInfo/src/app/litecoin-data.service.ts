@@ -29,8 +29,9 @@ export class LitecoinDataService {
   // get price for every 1 minute in the last hour
   retrieveMinuteData(){
     var currency = 'USD';
+    
     // query CryptoCompare API to get data
-    this.http.get('https://min-api.cryptocompare.com/data/histominute?fsym=LTC&tsym='+ currency + '&limit=60&aggregate=3&e=CCCAGG').subscribe(
+    this.http.get('https://min-api.cryptocompare.com/data/histominute?fsym=LTC&tsym='+ currency +'&limit=60&aggregate=3&e=CCCAGG').subscribe(
       (minuteData) => {
         // add each price to the priceInLastHour array
         for (var i=0; i<minuteData.Data.length; i++) {
@@ -42,6 +43,7 @@ export class LitecoinDataService {
         }
       }
     );
-  }
+    
+  } 
 
 }
