@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LitecoinDataService } from './../litecoin-data.service';
+import { Chart } from 'chart.js';
 
 @Component({
   selector: 'app-litecoin',

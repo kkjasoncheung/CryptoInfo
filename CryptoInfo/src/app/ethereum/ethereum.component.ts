@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EthereumDataService } from './../ethereum-data.service';
+import { Chart } from 'chart.js';
+
 
 @Component({
   selector: 'app-ethereum',
@@ -42,7 +44,7 @@ export class EthereumComponent implements OnInit {
 	        scales: {
 	            yAxes: [{
 	                ticks: {
-	               	  suggestedMin: 1300
+	               	  suggestedMin: 100000
 	                }
 	            }]
 	        },
