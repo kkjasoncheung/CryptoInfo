@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LitecoinDataService } from './../litecoin-data.service';
 
 @Component({
   selector: 'app-litecoin',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LitecoinComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ltcData:LitecoinDataService) { }
 
   ngOnInit() {
+  	this.ltcData.retrieveData();
   }
 
 }

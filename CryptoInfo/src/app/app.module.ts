@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { BitcoinDataService } from './bitcoin-data.service';
 import { EthereumDataService } from './ethereum-data.service';
+import { LitecoinDataService } from './litecoin-data.service';
 import { AppComponent } from './app.component';
 import { BitcoinComponent } from './bitcoin/bitcoin.component';
 import { EthereumComponent } from './ethereum/ethereum.component';
@@ -39,7 +40,7 @@ import { LitecoinComponent } from './litecoin/litecoin.component';
       }
     ])
   ],
-  providers: [BitcoinDataService, EthereumDataService],
+  providers: [BitcoinDataService, EthereumDataService, LitecoinDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
